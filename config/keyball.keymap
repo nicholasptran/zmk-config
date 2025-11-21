@@ -14,15 +14,6 @@
 
 &nice_view_spi { cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>; };
 
-&trackball_listener {
-    scroller {
-        layers = <SCROLL>;
-        input-processors = <&zip_xy_scaler 1 5>;
-        input-processors = <&zip_xy_swap_mapper>;
-        input-processors = <&zip_xy_to_scroll_mapper>;
-    };
-};
-
 / {
     combos {
         compatible = "zmk,combos";
