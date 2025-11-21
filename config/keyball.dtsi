@@ -2,15 +2,6 @@
 #include <physical_layouts.dtsi>
 #include <input/processors.dtsi>
 
-&trackball_listener {
-    scroller {
-        layers = <2>;
-        input-processors = <&zip_xy_scaler 1 5>;
-        input-processors = <&zip_xy_swap_mapper>;
-        input-processors = <&zip_xy_to_scroll_mapper>;
-    };
-};
-
 
 / {
     chosen {
