@@ -28,15 +28,10 @@
     scroller: scroller {
         layers = <SCROLL>;
         input-processors = <
-            &zip_xy_scaler 1 8
+            &zip_xy_scaler 1 15
             &zip_xy_to_scroll_mapper
             &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)
         >;
-    };
-
-    slow_mouse: slow_mouse {
-        layers = <ARROW>;
-        input-processors = <&zip_xy_scaler 1 10>;
     };
 };
 
@@ -64,7 +59,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "AUTOSHIFT_HOLD_TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <15k0>;
             bindings = <&shifted>, <&kp>;
         };
     };
