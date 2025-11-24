@@ -116,33 +116,33 @@
         default_layer {
             display-name = "QWRT";
             bindings = <
-&as MINUS       &as N1       &as N2        &as N3        &as N4        &as N5                            &as N6     &as N7  &as N8     &as N9   &as N0         &as EQUAL
-&kp TAB         &as Q        &as W         &as E         &as R         &as T                             &as Y      &as U   &as I      &as O    &as P          &as BACKSLASH
-&kp BACKSPACE   &as A        &as S         &as D         &as F         &as G                             &as H      &as J   &as K      &as L    &as SEMI       &as SQT
-&kp LEFT_SHIFT  &mt LCTRL Z  &as X         &as C         &as V         &as B        &gresc  &kp PAGE_UP  &as N      &as M   &as COMMA  &as DOT  &as FSLH       &kp RIGHT_SHIFT
-&kp LCTRL       &kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &mo 2   &mo 3        &kp ENTER                              &kp RIGHT_ALT  &tog 1
+&as MINUS       &as N1       &as N2        &as N3        &as N4        &as N5                          &as N6     &as N7  &as N8     &as N9   &as N0         &as EQUAL
+&kp TAB         &as Q        &as W         &as E         &as R         &as T                           &as Y      &as U   &as I      &as O    &as P          &as BACKSLASH
+&kp BACKSPACE   &as A        &as S         &as D         &as F         &as G                           &as H      &as J   &as K      &as L    &as SEMI       &as SQT
+&kp LEFT_SHIFT  &mt LCTRL Z  &as X         &as C         &as V         &as B        &gresc  &kp PSCRN  &as N      &as M   &as COMMA  &as DOT  &as FSLH       &kp RIGHT_SHIFT
+&kp LCTRL       &kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &mo 2   &mo 3      &kp ENTER                              &kp RIGHT_ALT  &tog 1
             >;
         };
 
         mouse_layer {
             display-name = "MOUSE";
             bindings = <
-&none  &none     &none     &none   &none      &none                       &none          &none     &none     &lmt 2 MB3  &mkp MB2  &none
-&none  &none     &none     &none   &none      &none                       &none          &none     &mkp MB1  &lmt 2 MB3  &mkp MB2  &mkp MB3
-&none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none                       &kp PAGE_UP    &mkp MB5  &mkp MB1  &lmt 2 MB3  &mkp MB2  &mkp MB3
-&none  &none     &none     &none   &none      &none  &soft_off  &none     &kp PAGE_DOWN  &mkp MB4  &none     &none       &none     &none
-&none  &none     &none     &none   &none      &none  &none      &mkp MB4  &mkp MB5                                       &none     &trans
+&none  &none     &none     &none   &none      &none                    &none          &none     &none     &lmt 2 MB3  &mkp MB2  &none
+&none  &none     &none     &none   &none      &none                    &none          &none     &mkp MB1  &lmt 2 MB3  &mkp MB2  &mkp MB3
+&none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none                    &kp PAGE_UP    &mkp MB5  &mkp MB1  &lmt 2 MB3  &mkp MB2  &mkp MB3
+&none  &none     &none     &none   &none      &none  &trans  &trans    &kp PAGE_DOWN  &mkp MB4  &none     &none       &none     &none
+&none  &none     &none     &none   &none      &none  &none   &mkp MB4  &mkp MB5                                       &none     &trans
             >;
         };
 
         scroll_layer {
             display-name = "SCROLL";
             bindings = <
-&trans             &kp F1         &kp F2     &kp F3        &kp F4        &mt LS(F5) F5                  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&trans             &kp LS(UNDER)  &kp LC(W)  &kp LS(LBRC)  &kp LS(RBRC)  &kp LC(LS(T))                  &trans  &kp N7  &kp N8  &kp N9  &trans   &kp F12
-&kp LC(BACKSPACE)  &kp LC(A)      &kp LC(S)  &trans        &trans        &trans                         &trans  &kp N4  &kp N5  &kp N6  &trans   &trans
-&trans             &kp LC(Z)      &kp LC(X)  &kp LC(C)     &kp LC(V)     &trans         &trans  &trans  &trans  &kp N1  &kp N2  &kp N3  &trans   &trans
-&trans             &trans         &trans     &trans        &trans        &trans         &trans  &trans  &kp N0                          &trans   &trans
+&trans             &kp F1         &kp F2     &kp F3                 &kp F4                  &mt LS(F5) F5                  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans             &kp LS(UNDER)  &kp LC(W)  &mt LEFT_BRACKET LBRC  &mt RIGHT_BRACKET RBRC  &kp LC(LS(T))                  &trans  &kp N7  &kp N8  &kp N9  &trans   &kp F12
+&kp LC(BACKSPACE)  &kp LC(A)      &kp LC(S)  &trans                 &trans                  &trans                         &trans  &kp N4  &kp N5  &kp N6  &trans   &trans
+&trans             &kp LC(Z)      &kp LC(X)  &kp LC(C)              &kp LC(V)               &trans         &trans  &trans  &trans  &kp N1  &kp N2  &kp N3  &trans   &trans
+&trans             &trans         &trans     &trans                 &trans                  &trans         &trans  &trans  &kp N0                          &trans   &trans
             >;
         };
 
