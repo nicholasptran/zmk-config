@@ -3,7 +3,7 @@
 #define SCROLL  2
 #define ARROW   3
 #define ARROW2  4
-#define KEYS_EXCLUDED_FROM_DISABLING_MOUSE_LAYER 9 10 20 21 22 23 30 31 32 33 34 35 44 45 55 57 58
+#define KEYS_EXCLUDED_FROM_DISABLING_MOUSE_LAYER 9 10 20 21 22 23 30 31 32 33 34 35 44 45 55
 
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
@@ -23,7 +23,7 @@
     input-processors = <
         &zip_x_scaler 1 1
         &zip_y_scaler 1 1
-        &zip_temp_layer MOUSE 700
+        &zip_temp_layer MOUSE 1000
     >;
 
     scroller: scroller {
@@ -109,7 +109,7 @@
     zip_temp_layer: zip_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
-        require-prior-idle-ms = <700>;
+        require-prior-idle-ms = <500>;
         excluded-positions = <KEYS_EXCLUDED_FROM_DISABLING_MOUSE_LAYER>;
     };
 
